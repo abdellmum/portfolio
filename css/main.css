@@ -2547,4 +2547,15 @@ footer .copyright span:last-child::after {
 	background: #000000;
 }
 
-/*# sourceMappingURL=main.css.map */
+
+
+
+
+
+
+.mask {
+    background: -webkit-linear-gradient(45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
+    background: -webkit-gradient(linear,45deg,from(rgba(29,236,197,.7)),to(rgba(91,14,214,.7)));
+    background: -o-linear-gradient(45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
+    background: linear-gradient(to 45deg,rgba(29,236,197,.7),rgba(91,14,214,.7) 100%);
+}
