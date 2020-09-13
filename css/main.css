@@ -52,12 +52,8 @@ a:hover, a:focus, a:active {
 	outline: 0;
 }
 
-/** 
- * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
+
+
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "poppins-semibold", sans-serif;
 	color: #6497b1;
@@ -2046,7 +2042,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #services {
-	background: #313131 url(../images/bg.jpg) no-repeat center;
+	background: url(../images/partner_1532377591-e1533045076500-1068x691.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2061,7 +2057,7 @@ header .logo a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #151515;
+	background: #c0b5b5;
 	opacity: .9;
 }
 
@@ -2070,9 +2066,9 @@ header .logo a {
 }
 
 #services .section-intro h1 {
-	color: white;
+	color: #005b96;
 }
-#services .section-intro h5 {
+#services .section-intro h3 {
 	color: #005b96;
 }
 #services .section-intro p {
@@ -2098,7 +2094,7 @@ header .logo a {
 	color: #005b96;
 }
 .services-list h3 {
-	color: #FFFFFF;
+	color: #005b96;
 }
 .services-list .desc {
 	color: rgba(255, 255, 255, 0.6);
@@ -2550,14 +2546,16 @@ footer .copyright span:last-child::after {
 
 
 
-.parent {
+.our_project {
+
 	height: auto;
-	width: 100%;
+	width: 90%;
 	 display: grid;
 	 grid-template-columns: repeat(3, 1fr);
 	 grid-template-rows: 1fr;
-	 grid-column-gap: 50px;
-	 grid-row-gap: 50px;
+	 grid-column-gap: 48px;
+	 grid-row-gap: 0px;
+	 margin: 0 auto;
 	 }
 	 
 	 .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -2576,6 +2574,41 @@ footer .copyright span:last-child::after {
 
 		.project-tittle{
 			text-align: center;
+			color:#005b96 ;
 		}
+.project{
+	background: #ebebeb;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(235, 235, 235);
+}
 
+/* map */
 
+#googlemaps {
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+  }
+  
+  #contactform {
+	position: relative;
+	z-index: 1; /* The z-index should be higher than Google Maps */
+	width: 300px;
+	margin: 60px auto 0;
+	padding: 10px;
+	background: black;
+	height: auto;
+	opacity: .45; /* Set the opacity for a slightly transparent Google Form */
+	color: white;
+  }
